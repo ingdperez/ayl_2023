@@ -12,7 +12,7 @@ class TestCaseParser(unittest.TestCase):
     def test_1(self):
         word = "1$"
         p = Parser()
-        self.assertFalse(p.evaluate(word))
+        self.assertRaises(Exception, p.evaluate, word)
 
     def test_00111(self):
         word = "00111$"
@@ -32,7 +32,7 @@ class TestCaseParser(unittest.TestCase):
     def test_10(self):
         word = "10$"
         p = Parser()
-        self.assertFalse(p.evaluate(word))
+        self.assertRaises(Exception, p.evaluate, word)
 
 
 if __name__ == '__main__':

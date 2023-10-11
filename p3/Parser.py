@@ -29,8 +29,6 @@ class Parser(object):
         if self.cadena[0] == "0":
             self.match("0")
             self.T()
-        elif self.cadena[0] == "1":
-            pass
         else:
             raise Exception("Error", "En S")
 
